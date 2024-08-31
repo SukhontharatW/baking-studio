@@ -1,0 +1,149 @@
+@use "../global/" as *;
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.navbar {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 3.2rem;
+  @media (max-width: 1100px) {
+    gap: 2rem;
+  }
+  &__item {
+    list-style: none;
+    transition: all 0.3s;
+
+    &.navbar__logo .navbar__link {
+      width: max-content;
+      & img {
+        width: 20rem;
+        height: auto;
+        transform: translateX(-1.2rem);
+        @media (max-width: 1200px) {
+          width: 18rem;
+        }
+        @media (max-width: 900px) {
+        }
+        @media (max-width: 700px) {
+          width: 16rem;
+        }
+        @media (max-width: 430px) {
+        }
+        @media (max-width: 360px) {
+          width: 14rem;
+        }
+        @media (max-width: 1100px) {
+          gap: inherit;
+        }
+      }
+    }
+    &:first-child {
+      margin-right: auto;
+    }
+    &:last-child {
+      margin-left: 10rem;
+      padding: 0.85rem 2.4rem;
+      background-color: $color-orange;
+      border-radius: 2rem;
+      @media (max-width: 1300px) {
+        margin-left: 3.2rem;
+      }
+    }
+
+    &:hover {
+      transform: translateY(0);
+      transition-duration: 0.35s;
+    }
+    &:active {
+      transform: translateY(0.2rem);
+      transition-duration: 0.35s;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & p {
+      &:hover {
+        color: $color-orange;
+      }
+      &:active {
+        color: $color-orange;
+      }
+    }
+  }
+}
+
+.navbar__btn--menu {
+  position: absolute;
+  font-size: 3.6rem;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+  color: inherit;
+  display: flex;
+  display: none;
+
+  justify-content: center;
+  align-items: center;
+  background-color: $color-orange;
+  color: $color-white;
+}
+.navbar__btn--close {
+  font-size: 3rem;
+  color: inherit;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &:hover {
+    color: $color-orange;
+  }
+  &:active {
+    color: $color-orange;
+  }
+}
+.navbar.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 40rem;
+  z-index: 999;
+  background-color: rgba($color-white, 0.2);
+  backdrop-filter: blur(15px);
+  box-shadow: -10px 0 10px rgba($color-black, 0.1);
+  display: flex;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2.8rem 4rem;
+  gap: 2rem;
+
+  .navbar__item {
+    margin-left: 0rem;
+    padding: 1rem 1rem;
+
+    &:last-child {
+      background-color: inherit;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .navbar__btn--menu {
+    display: flex;
+  }
+  .hideOnMobile {
+    display: none;
+  }
+}

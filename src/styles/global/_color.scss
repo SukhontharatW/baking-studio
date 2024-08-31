@@ -20,6 +20,9 @@ $color-grey-3: #fcfbfa;
 }
 
 .color {
+  &__white {
+    color: $color-white !important;
+  }
   &__orange {
     color: $color-orange !important;
   }
