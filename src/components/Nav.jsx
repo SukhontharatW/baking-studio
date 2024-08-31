@@ -43,7 +43,7 @@ function Nav() {
             </li>
             <li className="navbar__item">
               <Link
-                className="navbar__link navbar__btn--menu"
+                className="navbar__link navbar__btn--menu "
                 onClick={showSidebar}
               >
                 <IoMenu />

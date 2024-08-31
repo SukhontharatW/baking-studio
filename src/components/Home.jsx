@@ -1,6 +1,13 @@
+import Hero from "./Hero";
+
 function Home() {
-  return <div>Home</div>;
+  return (
+    <div className="container">
+      <div className="container__main">
+        <Hero />
+      </div>
+    </div>
+  );
 }
 
 export default Home;
-Home;

@@ -1,0 +1,69 @@
+@use "../global/" as *;
+.hero {
+  margin-top: 2rem;
+
+  border-radius: 14px;
+  width: 100%;
+  // height: 70vh;
+  // border: 1px solid red;
+  padding: 16rem 4.7rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),
+    url("/hero-picture.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__text {
+    max-width: 48rem;
+
+    & .heading--h4 {
+      margin-top: 3.8rem;
+      margin-bottom: 1.6rem;
+    }
+  }
+  &__cta {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.2rem;
+    @media (max-width: 430px) {
+      justify-content: center;
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--book {
+      color: $color-white;
+      background-color: $color-orange;
+      border: 1px solid $color-white;
+    }
+    &--learn {
+      color: $color-orange;
+      background-color: $color-white;
+      border: 1px solid $color-orange;
+    }
+    &--book,
+    &--learn {
+      text-decoration: none;
+
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+
+      padding: 1rem 2.8rem;
+      border-radius: 3rem;
+
+      @media (max-width: 430px) {
+        font-size: 1.6rem;
+        padding: 1rem 3.6rem;
+      }
+      @media (max-width: 380px) {
+        padding: 1rem 1.6rem;
+      }
+    }
+  }
+}
