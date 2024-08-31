@@ -1,0 +1,123 @@
+@use "../global/" as *;
+
+.footer {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  padding: 4rem 0rem;
+  gap: 4rem;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    min-width: max-content;
+    // gap: 1rem;
+    @media (max-width: 680px) {
+      width: 100%;
+    }
+  }
+  &__directories {
+    display: flex;
+    gap: 8.4rem;
+    @media (max-width: 1100px) {
+      gap: 4rem;
+    }
+    @media (max-width: 800px) {
+      width: 100%;
+      justify-content: start;
+      gap: 8rem;
+    }
+    @media (max-width: 480px) {
+      justify-content: space-between;
+      gap: 4rem;
+    }
+    @media (max-width: 430px) {
+      gap: 2rem;
+    }
+    &--item {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: 2rem;
+      @media (max-width: 800px) {
+        gap: 0.6rem;
+      }
+    }
+  }
+  &__social {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    gap: 2.2rem;
+    @media (max-width: 600px) {
+      margin-top: 0.8rem;
+      margin-bottom: 2.8rem;
+      gap: 2rem;
+    }
+    &--icon {
+      color: $color-white;
+      font-size: 2.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 2.5rem; /* 156.25% */
+      // opacity: 0.65;
+      @media (max-width: 800px) {
+        font-size: 2.4rem;
+      }
+      @media (max-width: 600px) {
+        font-size: 2.2rem;
+      }
+      @media (max-width: 480px) {
+        font-size: 2.1rem;
+      }
+    }
+  }
+}
+.directories {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+  @media (max-width: 800px) {
+    gap: 0.6rem;
+  }
+  & li {
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
+.footer__logo--btn {
+  width: max-content;
+  & img {
+    width: 20rem;
+    height: auto;
+    transform: translate(-1rem, -1rem);
+    @media (max-width: 1200px) {
+      width: 18rem;
+    }
+    @media (max-width: 900px) {
+    }
+    @media (max-width: 700px) {
+      width: 16rem;
+    }
+    @media (max-width: 430px) {
+    }
+    @media (max-width: 360px) {
+      width: 14rem;
+    }
+    @media (max-width: 1100px) {
+      gap: inherit;
+    }
+  }
+}

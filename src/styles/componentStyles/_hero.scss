@@ -38,12 +38,12 @@
     &--book {
       color: $color-white;
       background-color: $color-orange;
-      border: 1px solid $color-white;
+      border: 1px solid rgba($color-white, 0.6);
     }
     &--learn {
       color: $color-orange;
       background-color: $color-white;
-      border: 1px solid $color-orange;
+      border: 1px solid rgba($color-orange, 0.6);
     }
     &--book,
     &--learn {

@@ -2,7 +2,7 @@
 
 .value {
   width: 100%;
-  padding: 0rem 4.7rem;
+  padding: 0rem var(--space-padding);
   display: flex;
   flex-direction: column;
   align-items: start;
