@@ -1,36 +1,26 @@
 // COLOR VARIABLES
-$color-black: #1d1e21;
-$color-grey: #999a9b;
-$color-grey-light: #fafafa;
-$color-grey-light-2: #dadadb;
-$color-grey-light-3: #f4f4f4;
-$color-grey-light-4: #eee;
 $color-white: #fff;
-$color-blue: #3083ff;
-$color-yellow: #ffbd3d;
+$color-black: #4a4646;
+$color-orange: #ca7818;
+
+$color-grey: #706e6c;
+$color-grey-2: #fefefe;
+$color-grey-3: #fcfbfa;
+
 .bg {
   &__white {
     background-color: $color-white;
   }
-  &__grey {
-    background-color: $color-grey-light;
+  &__grey-2 {
+    background-color: $color-grey-2;
   }
-  &__black {
-    background-color: $color-black;
+  &__grey-3 {
+    background-color: $color-grey-3;
   }
 }
 
 .color {
-  &__white {
-    color: $color-white;
-  }
-  &__special {
-    color: #eee !important;
-  }
-  &__blue {
-    color: $color-blue !important;
-  }
-  &__yellow {
-    color: $color-yellow;
+  &__orange {
+    color: $color-orange !important;
   }
 }

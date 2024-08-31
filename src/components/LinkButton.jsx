@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { Link, useNavigate } from "react-router-dom";
 
 function LinkButton({ children, to }) {

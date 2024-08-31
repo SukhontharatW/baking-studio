@@ -58,22 +58,6 @@ body {
   background-color: $color-white;
 }
 
-.opacity {
-  &--low {
-  }
-  &--medium {
-  }
-  &--max {
-  }
-}
-.spacing {
-  &--max {
-  }
-  &--middle {
-  }
-  &--low {
-  }
-}
 .align {
   &--right {
     text-align: right;
@@ -85,176 +69,92 @@ body {
 .heading {
   &--h1 {
     /* Heading 1 */
-    color: $color-black;
-    font-size: 5.6rem;
+    color: $color-white;
+    font-size: 4.4rem;
     font-style: normal;
-    font-weight: 500;
-    line-height: 110%; /* 70.4px */
-    letter-spacing: 0.8px;
+    font-weight: 700;
+    line-height: normal;
   }
   &--h2 {
     /* Heading 2 */
+    color: $color-black;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
   &--h3 {
     /* Heading 3 */
-    color: $color-black;
-    font-size: 3.2rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%; /* 38.4px */
-    letter-spacing: 0.048rem;
-  }
-  &--h4 {
-    /* Heading 4 */
-    color: $color-black;
-    font-size: 3.2rem;
+    color: $color-orange;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 0.016rem;
-  }
-  &--h5 {
-    /* Heading 5 */
-    color: $color-grey;
-    font-size: 2.4rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 164%; /* 39.36px */
-    letter-spacing: 0.012rem;
-  }
-  &--h6 {
-    /* Heading 6 */
-    color: $color-grey;
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%; /* 19.2px */
-    letter-spacing: 0.16rem;
-    text-transform: uppercase;
   }
 }
 .p {
-  &__ss {
-    &--normal {
-      color: $color-black;
-
-      font-size: 0.8rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      letter-spacing: 0.04px;
-    }
-    &--light {
-      color: $color-grey;
-
-      font-size: 0.8rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      letter-spacing: 0.03px;
-    }
-    &--plus {
-      color: $color-grey;
-
-      font-size: 1.2rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
-  }
   &__sm {
+    &--light {
+      color: $color-white;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
     &--normal {
       color: $color-black;
-
       font-size: 1.4rem;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-      letter-spacing: 0.07px;
-    }
-    &--light {
-      color: $color-grey;
-
-      font-size: 1.4rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 132%; /* 18.48px */
-      letter-spacing: 0.021rem;
-    }
-    &--strong {
-      color: $color-black;
-
-      font-size: 1.4rem;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      letter-spacing: 0.049rem;
     }
   }
   &__reg {
-    &--base {
+    &--light {
+      color: $color-grey;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    &--normal {
       color: $color-black;
       font-size: 1.6rem;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-      letter-spacing: 0.08px;
-    }
-    &--normal {
-      color: $color-black;
-
-      font-size: 1.6rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 120%; /* 19.2px */
-      font-size: 1.6rem;
-    }
-    &--light {
-      color: $color-grey;
-
-      font-size: 1.6rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 132%; /* 21.12px */
-      letter-spacing: 0.024rem;
     }
     &--strong {
-      color: $color-white;
-
+      color: $color-black;
       font-size: 1.6rem;
       font-style: normal;
-      font-weight: 500;
-      line-height: 150%; /* 24px */
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    &--special {
+      color: $color-white;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 2.5rem; /* 156.25% */
     }
   }
 
   &__lg {
-    &--normal {
+    &--strong {
       color: $color-black;
-
       font-size: 1.8rem;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 700;
       line-height: normal;
     }
-    &--light {
-      color: $color-grey;
+    &--special {
+      color: #fff;
       font-size: 1.8rem;
       font-style: normal;
-      font-weight: 400;
-      line-height: 144%; /* 25.92px */
-      letter-spacing: 0.018rem;
-    }
-  }
-  &__xl {
-    &--normal {
-      color: $color-black;
-
-      font-size: 2rem;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 120%; /* 24px */
-      letter-spacing: 0.03rem;
+      font-weight: 700;
+      line-height: 140%; /* 25.2px */
     }
   }
 }
@@ -273,9 +173,7 @@ body {
   box-shadow: none;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12);
 }
-.add__border--top {
-  border-top: 1px solid rgba(#dadadb, 0.24);
-}
+
 .container {
   width: 100%;
   position: relative;
@@ -286,7 +184,7 @@ body {
     align-items: center;
     max-width: 144rem;
     margin: 0 auto;
-    padding: 12rem var(--space-side);
+    padding: 9rem var(--space-side);
   }
   &__fix {
     width: 100%;
@@ -300,7 +198,7 @@ body {
     align-items: center;
     max-width: 144rem;
     margin: 0 auto;
-    padding: 1.4rem var(--space-side);
+    padding: 2.3rem var(--space-side) 2rem var(--space-side);
     // border: 1px solid green;
   }
   &__footer {
@@ -309,16 +207,7 @@ body {
     align-items: center;
     max-width: 144rem;
     margin: 0 auto;
-    padding: 12rem var(--space-side) 4rem var(--space-side);
-  }
-  &__copyright {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 144rem;
-    margin: 0 auto;
-    padding: 3.2rem var(--space-side);
-    // border: 1px solid green;
+    padding: 9rem var(--space-side) 4rem var(--space-side);
   }
 }
 
