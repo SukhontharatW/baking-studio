@@ -1,0 +1,53 @@
+@use "../global/" as *;
+
+.about {
+  width: 100%;
+  padding-left: 4.7rem;
+  border-radius: 1.4rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(1, 1fr);
+    background-image: linear-gradient(
+        rgba($color-white, 0.4),
+        rgba($color-white, 0.6),
+        rgba($color-white, 0.9)
+      ),
+      url("/about-img.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 2rem 4.7rem;
+  }
+  & .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 4rem;
+  }
+  &__message {
+    margin-top: 2rem;
+  }
+  &__image {
+    width: 100%;
+    border-top-right-radius: 1.4rem;
+    border-bottom-right-radius: 1.4rem;
+
+    & img {
+      width: 100%;
+      border-top-right-radius: 1.4rem;
+      border-bottom-right-radius: 1.4rem;
+      @media (max-width: 800px) {
+      }
+    }
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+}
