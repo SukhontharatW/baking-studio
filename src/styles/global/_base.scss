@@ -89,7 +89,9 @@ body {
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
+    font-weight: 600;
     line-height: normal;
+    opacity: 0.8;
   }
   &--h4 {
     /* Heading 4 */
@@ -199,13 +201,13 @@ body {
     margin: 0 auto;
     padding: 9rem var(--space-side);
   }
-  &__mid {
+  &__middle {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 144rem;
     margin: 0 auto;
-    padding: 4.5rem var(--space-side);
+    padding: 0rem var(--space-side) 4.5rem var(--space-side);
   }
   &__fix {
     width: 100%;

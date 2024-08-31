@@ -10,7 +10,7 @@ function Home() {
         </div>
       </div>
       <div className="container">
-        <div className="container__mid">
+        <div className="container__middle">
           <Value />
         </div>
       </div>
