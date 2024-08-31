@@ -45,7 +45,8 @@
     }
     &--svg {
       font-size: 2.8rem;
-      color: $color-orange;
+      // color: $color-orange;
+      color: rgba($color-orange, 0.8);
     }
     @media (max-width: 1000px) {
       & .p__lg--strong {

@@ -1,7 +1,7 @@
-import { PiChefHatThin } from "react-icons/pi";
-import { PiShootingStarThin } from "react-icons/pi";
-import { PiFlaskThin } from "react-icons/pi";
-import { PiListHeartThin } from "react-icons/pi";
+import { PiChefHat } from "react-icons/pi";
+import { PiShootingStar } from "react-icons/pi";
+import { PiFlask } from "react-icons/pi";
+import { PiListHeart } from "react-icons/pi";
 function Value() {
   return (
     <div className="value">
@@ -12,7 +12,7 @@ function Value() {
       <div className="value__box">
         <div className="value__box--item">
           <div className="value__box--icon">
-            <PiChefHatThin className="value__box--svg" />
+            <PiChefHat className="value__box--svg" />
           </div>
           <p className="p__lg--strong">Expert Instructors</p>
           <p className="p__reg--light">
@@ -21,7 +21,7 @@ function Value() {
         </div>
         <div className="value__box--item">
           <div className="value__box--icon">
-            <PiShootingStarThin className="value__box--svg" />
+            <PiShootingStar className="value__box--svg" />
           </div>
           <p className="p__lg--strong">Delicious Recipes</p>
           <p className="p__reg--light">
@@ -30,7 +30,7 @@ function Value() {
         </div>
         <div className="value__box--item">
           <div className="value__box--icon">
-            <PiFlaskThin className="value__box--svg" />
+            <PiFlask className="value__box--svg" />
           </div>
           <p className="p__lg--strong">Science Based</p>
           <p className="p__reg--light">
@@ -39,7 +39,7 @@ function Value() {
         </div>
         <div className="value__box--item">
           <div className="value__box--icon">
-            <PiListHeartThin className="value__box--svg" />
+            <PiListHeart className="value__box--svg" />
           </div>
           <p className="p__lg--strong">Small Class Sizes</p>
           <p className="p__reg--light">
