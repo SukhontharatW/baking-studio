@@ -1,0 +1,67 @@
+@use "../global/" as *;
+
+.value {
+  width: 100%;
+  padding: 4.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 4rem;
+
+  & .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+  }
+  &__box {
+    display: flex;
+    gap: 3rem;
+    @media (max-width: 1000px) {
+      gap: 2rem;
+    }
+    @media (max-width: 800px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &--item {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      gap: 1rem;
+    }
+    &--icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 6rem;
+      height: 6rem;
+      background-color: rgba($color-orange, 0.2);
+      border-radius: 100%;
+    }
+    &--svg {
+      font-size: 2.8rem;
+      color: $color-orange;
+    }
+    @media (max-width: 1000px) {
+      & .p__lg--strong {
+        font-size: 1.6rem;
+      }
+      & .p__reg--light {
+        font-size: 1.4rem;
+      }
+    }
+    @media (max-width: 350px) {
+      & .p__lg--strong {
+        font-size: 1.4rem;
+      }
+      & .p__reg--light {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
