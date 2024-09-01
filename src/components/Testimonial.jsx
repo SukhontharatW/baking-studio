@@ -7,8 +7,8 @@ function Testimonial() {
   return (
     <div className="testimonial">
       <div className="heading">
-        <h3 className="heading--h3">SERVICE</h3>
-        <h2 className="heading--h2">Our Popular Classes</h2>
+        <h3 className="heading--h3">TESTIMONIAL</h3>
+        <h2 className="heading--h2">What people say about us</h2>
       </div>
       <div className="testimonial__box">
         <div className="testimonial__item">
