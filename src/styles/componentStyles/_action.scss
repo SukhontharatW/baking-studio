@@ -1,0 +1,89 @@
+@use "../global/" as *;
+.action {
+  width: 100%;
+  border-radius: var(--radius-main);
+  padding-left: var(--space-padding);
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  gap: 13.5rem;
+  @media (max-width: 1000px) {
+    gap: 3rem;
+  }
+
+  @media (max-width: 830px) {
+    grid-template-columns: repeat(1, 1fr);
+    // background-image: linear-gradient(
+    //     rgba($color-white, 0.4),
+    //     rgba($color-white, 0.6),
+    //     rgba($color-white, 0.9)
+    //   ),
+    //   url("/booking-img.png");
+    background-image: linear-gradient(
+        rgba($color-white, 0.6),
+        rgba($color-white, 0.8),
+        rgba($color-white, 0.8),
+        rgba($color-white, 0.6)
+      ),
+      url("/booking-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 2rem var(--space-padding);
+  }
+  & .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  &__text {
+    padding: 13rem 0rem;
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+    & img {
+      border-top-right-radius: var(--radius-main);
+      border-bottom-right-radius: var(--radius-main);
+      // width: 100%;
+      height: 100%;
+    }
+    @media (max-width: 830px) {
+      display: none;
+    }
+  }
+  &__btn {
+    background-color: $color-orange;
+    padding: 1.4rem 3.4rem;
+    border-radius: 3.8rem;
+    min-width: max-content;
+    cursor: pointer;
+    &--link {
+      text-decoration: none;
+    }
+  }
+  &__form {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  &__input {
+    border: 0;
+    outline: 0;
+    width: 100%;
+  }
+  &__cta {
+    border: 1px solid rgba($color-black, 0.2);
+    background-color: $color-white;
+
+    padding: 0.6rem 0.6rem 0.6rem 2rem;
+    border-radius: 3.8rem;
+    margin-top: 3rem;
+    margin-bottom: 0.8rem;
+  }
+}

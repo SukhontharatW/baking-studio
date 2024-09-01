@@ -1,4 +1,5 @@
 import About from "./About";
+import Action from "./Action";
 import Class from "./Class";
 import Hero from "./Hero";
 import Testimonial from "./Testimonial";
@@ -30,6 +31,11 @@ function Home() {
       <div className="container">
         <div className="container__main">
           <Testimonial />
+        </div>
+      </div>
+      <div className="container">
+        <div className="container__main">
+          <Action />
         </div>
       </div>
     </>
