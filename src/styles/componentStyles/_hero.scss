@@ -4,6 +4,7 @@
 
   border-radius: var(--radius-main);
   width: 100%;
+
   // height: 70vh;
   // border: 1px solid red;
   padding: 16rem 4.7rem;
@@ -18,6 +19,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 100vh;
   }
 
   @media (max-width: 430px) {
