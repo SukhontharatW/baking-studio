@@ -4,8 +4,8 @@ function About() {
     <div className="about">
       <div className="about__text">
         <div className="heading">
-          <h3 className="heading--h3">CORE VALUE</h3>
-          <h2 className="heading--h2">What make us spacial</h2>
+          <h3 className="heading--h3">ABOUT US</h3>
+          <h2 className="heading--h2">Come visit our baking studio</h2>
         </div>
         <p className="p__reg--normal">
           At our baking studio,we offer a unique experience with a wide range of

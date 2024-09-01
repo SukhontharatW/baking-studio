@@ -191,6 +191,7 @@ body {
 .container {
   width: 100%;
   position: relative;
+  // border: 1px solid green;
 
   &__main {
     display: flex;
@@ -199,6 +200,8 @@ body {
     max-width: 144rem;
     margin: 0 auto;
     padding: 9rem var(--space-side);
+    padding: 4.5rem var(--space-side) 9rem var(--space-side);
+    // border: 1px solid red;
   }
   &__middle {
     display: flex;
@@ -206,7 +209,7 @@ body {
     align-items: center;
     max-width: 144rem;
     margin: 0 auto;
-    padding: 0rem var(--space-side) 4.5rem var(--space-side);
+    padding: 0rem var(--space-side) 9rem var(--space-side);
   }
   &__fix {
     width: 100%;

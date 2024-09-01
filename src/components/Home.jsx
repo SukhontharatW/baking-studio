@@ -1,4 +1,5 @@
 import About from "./About";
+import Class from "./Class";
 import Hero from "./Hero";
 import Value from "./Value";
 
@@ -18,6 +19,11 @@ function Home() {
       <div className="container">
         <div className="container__main bg__grey-2">
           <About />
+        </div>
+      </div>
+      <div className="container">
+        <div className="container__main">
+          <Class />
         </div>
       </div>
     </>
