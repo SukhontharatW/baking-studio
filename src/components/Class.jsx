@@ -31,13 +31,13 @@ function Class() {
           <div className="class__item--image">
             <img src={class2} alt="" />
           </div>
-          <p className="p__reg--strong">CAKE & SWEETS</p>
+          <p className="p__reg--strong">CROISSANT & BREAD</p>
           <div className="class__item--first">
-            <p className="p__sm--normal">⏳ 6 hours</p>
-            <p className="p__sm--normal">🗓️ Every Sunday</p>
+            <p className="p__sm--normal">⏳ 12 hours</p>
+            <p className="p__sm--normal">🗓️ Every Sat-Sun</p>
           </div>
           <div className="class__item--last">
-            <p className="p__sm--normal">🔥 15% off</p>
+            <p className="p__sm--normal">🔥 10% off</p>
 
             <p className="p__sm--normal class__item--btn click__basic shadow-2">
               <Link className="class__item--btn--link">SEE DETAIL</Link>
@@ -48,10 +48,10 @@ function Class() {
           <div className="class__item--image">
             <img src={class3} alt="" />
           </div>
-          <p className="p__reg--strong">CAKE & SWEETS</p>
+          <p className="p__reg--strong">THE MASTER PATISSERIE</p>
           <div className="class__item--first">
-            <p className="p__sm--normal">⏳ 6 hours</p>
-            <p className="p__sm--normal">🗓️ Every Sunday</p>
+            <p className="p__sm--normal">⏳ 72 hours</p>
+            <p className="p__sm--normal">🗓️ Every Sat-Sun</p>
           </div>
           <div className="class__item--last">
             <p className="p__sm--normal">🔥 15% off</p>
