@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import Logo from "../image/logo-nav.svg";
+// import Logo from "../image/logo-nav.svg";
+import Logo from "../image/logo-transparent.svg";
 import { IoClose, IoMenu } from "react-icons/io5";
 
 function Nav() {
@@ -12,7 +13,8 @@ function Nav() {
     sidebar.style.display = "none";
   };
   return (
-    <div className="container__fix bg__white shadow">
+    <div className="container__fix bg__white-2 shadow">
+      {/* <div className="container__fix  shadow"> */}
       <div className="container__nav">
         <nav className="nav">
           <ul className="navbar">

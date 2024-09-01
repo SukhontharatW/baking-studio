@@ -11,6 +11,10 @@ $color-grey-3: #fcfbfa;
   &__white {
     background-color: $color-white;
   }
+  &__white-2 {
+    background-color: rgba($color-white, 0.8);
+    backdrop-filter: blur(15px);
+  }
   &__grey-2 {
     background-color: $color-grey-2;
   }

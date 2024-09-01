@@ -11,7 +11,7 @@ $font-primary: "Poppins", sans-serif;
   // --space-side: 14rem;
   --space-side: 10rem;
   --space-padding: 4.7rem;
-  --radius-main: 0.6rem;
+  --radius-main: 1rem;
   @media (max-width: 1300px) {
     // --space-side: 12rem;
     --space-side: 9rem;
@@ -218,15 +218,6 @@ body {
     margin: 0 auto;
     padding: 9rem var(--space-side);
     padding: 4.5rem var(--space-side) 9rem var(--space-side);
-    // border: 1px solid red;
-  }
-  &__middle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 144rem;
-    margin: 0 auto;
-    padding: 0rem var(--space-side) 9rem var(--space-side);
   }
   &__fix {
     width: 100%;
@@ -241,8 +232,8 @@ body {
     max-width: 144rem;
     width: 100%;
     margin: 0 auto;
-    padding: 2.3rem var(--space-side) 2rem var(--space-side);
-    // padding: 2.3rem 1rem 2rem 1rem;
+    // padding: 2.3rem var(--space-side) 2rem var(--space-side);
+    padding: 1.3rem var(--space-side) 1rem var(--space-side);
     // border: 1px solid green;
   }
   &__footer {

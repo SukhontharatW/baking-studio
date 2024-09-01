@@ -7,11 +7,18 @@
   // height: 70vh;
   // border: 1px solid red;
   padding: 16rem 4.7rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),
-    url("/hero-picture.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),
+  //   url("/hero-picture.png");
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  &__bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),
+      url("/hero-picture.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
   @media (max-width: 430px) {
     padding: 16rem 3rem;
