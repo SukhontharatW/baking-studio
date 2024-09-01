@@ -118,6 +118,13 @@ body {
     }
   }
   &__reg {
+    &--italic {
+      color: $color-grey;
+      font-size: 1.5rem;
+      font-style: italic;
+      font-weight: 400;
+      line-height: normal;
+    }
     &--light {
       color: $color-grey;
       font-size: 1.6rem;
@@ -125,6 +132,7 @@ body {
       font-weight: 400;
       line-height: normal;
     }
+
     &--normal {
       color: $color-black;
       font-size: 1.6rem;

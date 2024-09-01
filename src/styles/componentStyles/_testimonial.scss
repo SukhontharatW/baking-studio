@@ -1,0 +1,56 @@
+@use "../global/" as *;
+.testimonial {
+  width: 100%;
+  padding: 2rem var(--space-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  & .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+  }
+  &__box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    column-gap: 3rem;
+    row-gap: 3rem;
+  }
+  &__item {
+    padding: 1.2rem 1.6rem;
+    border: 1px solid rgba($color-orange, 0.4);
+    border-radius: 1.4rem;
+    &--first {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    &--image {
+      width: 4rem;
+      height: auto;
+      & img {
+        width: 4rem;
+        height: auto;
+      }
+    }
+  }
+  &__btn {
+    align-self: flex-end;
+    @media (max-width: 1100px) {
+      align-self: center;
+    }
+    &--link {
+      color: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
