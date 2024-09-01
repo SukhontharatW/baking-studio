@@ -1,8 +1,9 @@
-# React + Vite
+**Overview**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bakery Studio is a landing page for a bakery school. Provide class detail for anyone who want to learn how to make bakeries.
 
-Currently, two official plugins are available:
+**Purpose** : The purpose of this project is to demonstrate my skills in Frontend Development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Built with** : React, SASS/SCSS, HTML, JavaScript, Figma.
+
+**Demo** : [https://bakery-studio-dev.app/](https://bakery-studio-dev.netlify.app/)
