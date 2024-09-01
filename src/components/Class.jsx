@@ -62,6 +62,9 @@ function Class() {
           </div>
         </div>
       </div>
+      {/* <h3 className="heading--h3 class__cta">
+        <Link className="class__cta--btn">See all</Link>
+      </h3> */}
     </div>
   );
 }
