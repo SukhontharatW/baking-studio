@@ -17,7 +17,7 @@ function Action() {
             <input
               type="email"
               className="action__input"
-              placeholder="Your Email Address"
+              placeholder="Your email address"
             />
             <div className="action__btn click__basic">
               <Link className="action__btn--link">
