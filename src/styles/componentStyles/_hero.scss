@@ -1,6 +1,6 @@
 @use "../global/" as *;
 .hero {
-  margin-top: 6.5rem;
+  margin-top: 5.5rem;
 
   border-radius: var(--radius-main);
   width: 100%;
@@ -12,6 +12,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (max-width: 430px) {
+    padding: 16rem 3rem;
+  }
 
   &__text {
     max-width: 48rem;
@@ -27,13 +31,18 @@
     justify-content: flex-start;
     gap: 1.2rem;
     @media (max-width: 430px) {
-      justify-content: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 0.6rem;
     }
   }
   &__btn {
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 320px) {
+      width: 100%;
+    }
 
     &--book {
       color: $color-white;
@@ -59,13 +68,9 @@
 
       @media (max-width: 430px) {
         font-size: 1.6rem;
-        padding: 1rem 3.6rem;
-      }
-      @media (max-width: 380px) {
-        padding: 1rem 1.6rem;
-      }
-      @media (max-width: 320px) {
-        padding: 1rem 1.2rem;
+        padding: 1rem 0.6rem;
+        width: 100%;
+        text-align: center;
       }
     }
   }
