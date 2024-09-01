@@ -3,7 +3,8 @@
 .about {
   width: 100%;
   padding-left: var(--space-padding);
-  border-radius: 1.4rem;
+  // border-radius: 1.4rem;
+  border-radius: var(--radius-main);
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -36,15 +37,15 @@
   }
   &__image {
     width: 100%;
-    border-top-right-radius: 1.4rem;
-    border-bottom-right-radius: 1.4rem;
+
+    border-top-right-radius: var(--radius-main);
+    border-bottom-right-radius: var(--radius-main);
 
     & img {
       width: 100%;
-      border-top-right-radius: 1.4rem;
-      border-bottom-right-radius: 1.4rem;
-      @media (max-width: 800px) {
-      }
+
+      border-top-right-radius: var(--radius-main);
+      border-bottom-right-radius: var(--radius-main);
     }
     @media (max-width: 800px) {
       display: none;

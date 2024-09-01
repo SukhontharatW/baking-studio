@@ -22,8 +22,8 @@ function Home() {
           <About />
         </div>
       </div>
-      <div className="container">
-        <div className="container__main">
+      <div className="container bg__grey-3">
+        <div className="container__main bg__grey-3">
           <Class />
         </div>
       </div>
